@@ -1,5 +1,7 @@
 package io.github.mykytko.javalab2;
 
+import io.github.mykytko.javalab2.triangle.*;
+
 public class Main {
     public static void main(String[] args) {
 
