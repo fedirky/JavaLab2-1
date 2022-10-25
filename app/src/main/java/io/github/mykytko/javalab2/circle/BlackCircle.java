@@ -14,6 +14,7 @@ public class BlackCircle extends Circle {
     }
     @Override
     public String toString() {
+
         return super.toString() + " and has color: " + color;
     }
 }
