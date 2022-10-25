@@ -1,7 +1,6 @@
 package io.github.mykytko.javalab2.circle;
 import io.github.mykytko.javalab2.triangle.Vertex;
 import io.github.mykytko.javalab2.Color;
-import io.github.mykytko.javalab2.triangle.WhiteTriangle;
 
 public class WhiteCircle extends Circle {
     private Color color = Color.WHITE;
