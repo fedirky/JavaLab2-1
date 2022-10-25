@@ -11,6 +11,7 @@ public class WhiteCircle extends Circle {
     }
     public WhiteCircle(Vertex a, int b){
         super(a,b);
+
     }
     @Override
     public String toString() {

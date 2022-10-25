@@ -8,6 +8,7 @@ public class BlackCircle extends Circle {
 
     public BlackCircle(){
         super();
+
     }
     public BlackCircle(Vertex a, int b){
         super(a,b);
