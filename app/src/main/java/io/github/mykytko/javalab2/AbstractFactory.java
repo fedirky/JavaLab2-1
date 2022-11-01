@@ -8,7 +8,7 @@ public class AbstractFactory {
             case BLACK:
                 return new BlackFactory();
             default:
-                throw new Exception("Invalid factory color");
+                throw new InvalidFactoryColorException();
         }
     }
 }
