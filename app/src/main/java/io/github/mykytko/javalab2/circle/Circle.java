@@ -1,28 +1,35 @@
 package io.github.mykytko.javalab2.circle;
 import io.github.mykytko.javalab2.triangle.Vertex;
-public class Circle {
-    private Vertex center;
-    private Integer radius;
+import io.github.mykytko.javalab2.Color;
 
-    public Circle() {
-        center = new Vertex(0,0);
-        radius = 1;
-    }
+abstract class Circle {
+    private final Vertex center;
+    private final Float radius;
+    private final Color color;
 
-    public Circle(Vertex a, int b) {
+    public Circle(Vertex a, float b, Color c) {
         center = a;
         radius = b;
+        color = c;
     }
     public Vertex getCenter(){
         return this.center;
     }
-    public Integer getRadius(){
+    public Float getRadius(){
         return this.radius;
+    }
+    public Color getColor(){
+        return this.color;
+    }
+    public float calculateArea(){
+        return (float)(Math.PI * Math.pow(radius, 2));
     }
 
     @Override
     public String toString() {
-
-        return "Center " + center.toString() + "\nRadius " + this.radius;
+        return "Center: " + center.toString() +
+               "\nRadius: " + this.radius  +
+               "\nColor: " + this.color +
+               "\nArea: " + calculateArea();
     }
 }
