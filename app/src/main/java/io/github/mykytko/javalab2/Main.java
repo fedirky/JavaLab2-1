@@ -2,6 +2,7 @@ package io.github.mykytko.javalab2;
 
 import javafx.util.Pair;
 
+
 import java.util.ArrayList;
 import java.util.Random;
 
