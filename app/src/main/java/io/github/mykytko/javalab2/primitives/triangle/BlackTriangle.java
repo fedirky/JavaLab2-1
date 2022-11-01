@@ -1,6 +1,9 @@
-package io.github.mykytko.javalab2.triangle;
+package io.github.mykytko.javalab2.primitives.triangle;
 
 import io.github.mykytko.javalab2.Color;
+import io.github.mykytko.javalab2.primitives.Point;
+
+import java.util.ArrayList;
 
 public class BlackTriangle extends Triangle {
 	private final Color color = Color.BLACK;
@@ -9,8 +12,8 @@ public class BlackTriangle extends Triangle {
 		super();
 	}
 
-	public BlackTriangle(Vertex vertex1, Vertex vertex2, Vertex vertex3) {
-		super(vertex1, vertex2, vertex3);
+	public BlackTriangle(ArrayList<Point> vertices) {
+		super(vertices);
 	}
 
 	public Color getColor() {
@@ -19,6 +22,6 @@ public class BlackTriangle extends Triangle {
 
 	@Override
 	public String toString() {
-		return super.toString() + " Color: " + color;
+		return "Color: " + color + "; " + super.toString();
 	}
 }

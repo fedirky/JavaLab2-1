@@ -1,19 +1,19 @@
-package io.github.mykytko.javalab2.circle;
-import io.github.mykytko.javalab2.triangle.Vertex;
+package io.github.mykytko.javalab2.primitives.circle;
+import io.github.mykytko.javalab2.primitives.Point;
 public class Circle {
-    private Vertex center;
+    private Point center;
     private Integer radius;
 
     public Circle() {
-        center = new Vertex(0,0);
+        center = new Point(0,0);
         radius = 1;
     }
 
-    public Circle(Vertex a, int b) {
+    public Circle(Point a, int b) {
         center = a;
         radius = b;
     }
-    public Vertex getCenter(){
+    public Point getCenter(){
         return this.center;
     }
     public Integer getRadius(){

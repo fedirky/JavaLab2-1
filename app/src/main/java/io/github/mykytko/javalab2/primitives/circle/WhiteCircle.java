@@ -1,5 +1,5 @@
-package io.github.mykytko.javalab2.circle;
-import io.github.mykytko.javalab2.triangle.Vertex;
+package io.github.mykytko.javalab2.primitives.circle;
+import io.github.mykytko.javalab2.primitives.Point;
 import io.github.mykytko.javalab2.Color;
 
 public class WhiteCircle extends Circle {
@@ -8,7 +8,7 @@ public class WhiteCircle extends Circle {
     public WhiteCircle(){
         super();
     }
-    public WhiteCircle(Vertex a, int b){
+    public WhiteCircle(Point a, int b){
         super(a,b);
     }
     @Override
