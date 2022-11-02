@@ -1,9 +1,11 @@
 package io.github.mykytko.javalab2;
 
 import java.util.ArrayList;
-
-import io.github.mykytko.javalab2.circle.WhiteCircle;
-import io.github.mykytko.javalab2.triangle.WhiteTriangle;
+import io.github.mykytko.javalab2.primitives.circle.Circle;
+import io.github.mykytko.javalab2.primitives.triangle.Triangle;
+import io.github.mykytko.javalab2.primitives.circle.WhiteCircle;
+import io.github.mykytko.javalab2.primitives.triangle.WhiteTriangle;
+import io.github.mykytko.javalab2.primitives.Point;
 
 public class WhiteFactory implements BaseFactory {
     @Override
@@ -12,7 +14,7 @@ public class WhiteFactory implements BaseFactory {
     }
 
     @Override
-    public Triangle createTriangle(ArrayList <Point> vertices) throws InvalidFactoryColorException {
+    public Triangle createTriangle(ArrayList <Point> vertices) {
       return new WhiteTriangle(vertices);
     }
 }

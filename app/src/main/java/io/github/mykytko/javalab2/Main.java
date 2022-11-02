@@ -1,12 +1,11 @@
 package io.github.mykytko.javalab2;
 
 import javafx.util.Pair;
-
-
 import java.util.ArrayList;
 import java.util.Random;
 
-import io.github.mykytko.javalab2.triangle.*;
+import io.github.mykytko.javalab2.primitives.triangle.*;
+import io.github.mykytko.javalab2.primitives.circle.*;
 
 public class Main {
     public static void main(String[] args) {

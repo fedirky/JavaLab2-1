@@ -1,28 +1,35 @@
 package io.github.mykytko.javalab2.primitives.circle;
 import io.github.mykytko.javalab2.primitives.Point;
-public class Circle {
-    private Point center;
-    private Integer radius;
+import io.github.mykytko.javalab2.Color;
 
-    public Circle() {
-        center = new Point(0,0);
-        radius = 1;
-    }
+public abstract class Circle {
+    private final Point center;
+    private final Float radius;
+    private final Color color;
 
-    public Circle(Point a, int b) {
+    public Circle(Point a, float b, Color c) {
         center = a;
         radius = b;
+        color = c;
     }
-    public Point getCenter(){
+
+    public Point getCenter() {
         return this.center;
     }
-    public Integer getRadius(){
+
+    public Float getRadius() {
         return this.radius;
+    }
+
+    public float calculateArea() {
+        return (float) (Math.PI * Math.pow(radius, 2));
     }
 
     @Override
     public String toString() {
-
-        return "Center " + center.toString() + "\nRadius " + this.radius;
+        return "Center: " + center.toString() +
+               "\nRadius: " + this.radius  +
+               "\nColor: " + this.color +
+               "\nArea: " + calculateArea();
     }
 }

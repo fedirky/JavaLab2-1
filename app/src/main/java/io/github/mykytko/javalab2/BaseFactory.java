@@ -2,10 +2,11 @@ package io.github.mykytko.javalab2;
 
 import java.util.ArrayList;
 
-import io.github.mykytko.javalab2.circle.Circle;
-import io.github.mykytko.javalab2.triangle.Triangle;
+import io.github.mykytko.javalab2.primitives.circle.Circle;
+import io.github.mykytko.javalab2.primitives.triangle.Triangle;
+import io.github.mykytko.javalab2.primitives.Point;
 
 public interface BaseFactory {
-    public Circle createCircle(Point center, float radius);
-    public Triangle createTriangle(ArrayList <Point> vertices);
+    Circle createCircle(Point center, float radius);
+    Triangle createTriangle(ArrayList <Point> vertices);
 }

@@ -2,8 +2,11 @@ package io.github.mykytko.javalab2;
 
 import java.util.ArrayList;
 
-import io.github.mykytko.javalab2.circle.BlackCircle;
-import io.github.mykytko.javalab2.triangle.BlackTriangle;
+import io.github.mykytko.javalab2.primitives.circle.Circle;
+import io.github.mykytko.javalab2.primitives.triangle.Triangle;
+import io.github.mykytko.javalab2.primitives.circle.BlackCircle;
+import io.github.mykytko.javalab2.primitives.triangle.BlackTriangle;
+import io.github.mykytko.javalab2.primitives.Point;
 
 public class BlackFactory implements BaseFactory {
     @Override
