@@ -7,5 +7,5 @@ import io.github.mykytko.javalab2.triangle.Triangle;
 
 public interface BaseFactory {
     public Circle createCircle(Point center, float radius);
-    public Triangle createTriangle(ArrayList <Point> vertices) throws InvalidFactoryColorException;
+    public Triangle createTriangle(ArrayList <Point> vertices);
 }

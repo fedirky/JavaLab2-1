@@ -2,8 +2,8 @@ package io.github.mykytko.javalab2;
 
 import java.util.ArrayList;
 
-import io.github.mykytko.javalab2.circle.Circle;
-import io.github.mykytko.javalab2.triangle.Triangle;
+import io.github.mykytko.javalab2.circle.WhiteCircle;
+import io.github.mykytko.javalab2.triangle.WhiteTriangle;
 
 public class WhiteFactory implements BaseFactory {
     @Override
