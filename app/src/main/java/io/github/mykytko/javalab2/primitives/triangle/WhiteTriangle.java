@@ -8,10 +8,6 @@ import java.util.ArrayList;
 public class WhiteTriangle extends Triangle {
 	private final Color color = Color.WHITE;
 
-	public WhiteTriangle() {
-		super();
-	}
-
 	public WhiteTriangle(ArrayList<Point> vertices) {
 		super(vertices);
 	}
@@ -22,6 +18,6 @@ public class WhiteTriangle extends Triangle {
 
 	@Override
 	public String toString() {
-		return "Color: " + color + "; " + super.toString();
+		return color + " " + super.toString();
 	}
 }
