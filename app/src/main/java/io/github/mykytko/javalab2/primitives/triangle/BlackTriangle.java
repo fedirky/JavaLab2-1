@@ -1,6 +1,6 @@
 package io.github.mykytko.javalab2.primitives.triangle;
 
-import io.github.mykytko.javalab2.Color;
+import io.github.mykytko.javalab2.primitives.Color;
 import io.github.mykytko.javalab2.primitives.Point;
 
 import java.util.ArrayList;
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class BlackTriangle extends Triangle {
 	private final Color color = Color.BLACK;
 
-	public BlackTriangle(ArrayList<Point> vertices) {
+	public BlackTriangle(ArrayList<Point> vertices) throws InvalidPointsAmountException {
 		super(vertices);
 	}
 

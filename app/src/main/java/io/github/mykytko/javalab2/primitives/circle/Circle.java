@@ -1,7 +1,8 @@
 package io.github.mykytko.javalab2.primitives.circle;
 
 import io.github.mykytko.javalab2.primitives.Point;
-import io.github.mykytko.javalab2.Color;
+import io.github.mykytko.javalab2.primitives.Color;
+import io.github.mykytko.javalab2.primitives.Figure;
 
 public abstract class Circle implements Figure {
     private final Point center;
@@ -14,7 +15,7 @@ public abstract class Circle implements Figure {
         color = c;
     }
 
-    public float calculateArea() {
+    public Float calculateArea() {
         return (float) (Math.PI * Math.pow(radius, 2));
     }
 

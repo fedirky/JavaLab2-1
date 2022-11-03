@@ -1,4 +1,6 @@
-package io.github.mykytko.javalab2;
+package io.github.mykytko.javalab2.factories;
+
+import io.github.mykytko.javalab2.primitives.Color;
 
 public class AbstractFactory {
     public static BaseFactory getFactory(Color color) {

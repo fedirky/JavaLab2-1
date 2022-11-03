@@ -1,7 +1,7 @@
 package io.github.mykytko.javalab2.primitives.circle;
 
 import io.github.mykytko.javalab2.primitives.Point;
-import io.github.mykytko.javalab2.Color;
+import io.github.mykytko.javalab2.primitives.Color;
 
 public class WhiteCircle extends Circle {
     public WhiteCircle(Point a, float b){

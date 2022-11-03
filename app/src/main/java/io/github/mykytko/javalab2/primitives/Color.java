@@ -1,4 +1,4 @@
-package io.github.mykytko.javalab2;
+package io.github.mykytko.javalab2.primitives;
 
 public enum Color {
     BLACK {
