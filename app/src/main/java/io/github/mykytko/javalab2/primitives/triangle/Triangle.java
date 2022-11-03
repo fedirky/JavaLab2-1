@@ -32,7 +32,7 @@ public abstract class Triangle implements Figure {
 
 	@Override
 	public String toString() {
-		return this.color + " triangle:" +
+		return  "triangle:" +
 			"\nVertices: " + vertices.get(0).toString() +
 			" " + vertices.get(1).toString() +
 			" " + vertices.get(2).toString() +
