@@ -1,4 +1,5 @@
 package io.github.mykytko.javalab2.primitives.circle;
+
 import io.github.mykytko.javalab2.primitives.Point;
 import io.github.mykytko.javalab2.Color;
 
