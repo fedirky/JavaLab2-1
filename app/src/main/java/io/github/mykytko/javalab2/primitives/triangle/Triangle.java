@@ -19,22 +19,24 @@ public abstract class Triangle implements Figure {
 		this.vertices = vertices;
 	}
 
-	public ArrayList<Point> getVertices() {
-		return vertices;
-	}
-
 	@Override
 	public Float calculateArea() {
 		return 0.5f * abs((vertices.get(0).getX() * (vertices.get(1).getY() - vertices.get(2).getY()))
 				+ (vertices.get(1).getX() * (vertices.get(2).getY() - vertices.get(0).getY()))
 				+ (vertices.get(2).getX() * (vertices.get(0).getY() - vertices.get(1).getY())));
 	}
+	
+	public ArrayList<Point> getVertices() {
+		return vertices;
+	}
 
 	@Override
 	public String toString() {
-		return "Area: " + calculateArea() + "; "
-				+ "Vertices: " + vertices.get(0).toString()
-				+ " " + vertices.get(1).toString()
-				+ " " + vertices.get(2).toString();
+		return this.color + " triangle:" +
+			"\nVertices: " + vertices.get(0).toString() +
+			" " + vertices.get(1).toString() +
+			" " + vertices.get(2).toString() +
+			"\nArea: " + calculateArea();
+				
 	}
 }
