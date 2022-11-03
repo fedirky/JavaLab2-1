@@ -9,18 +9,13 @@ import static java.lang.Math.abs;
 public abstract class Triangle implements Figure {
 	private final ArrayList<Point> vertices;
 
-	public Triangle() {
-		vertices = new ArrayList<>() {
-			{
-				add(new Point(0, 0));
-				add(new Point(0, 0));
-				add(new Point(0, 0));
-			}
-		};
+	public Triangle(ArrayList<Point> vertices) throws InvalidPointsAmountException {
+		if(vertices.size() > 3) {
+			throw new InvalidPointsAmountException("TooManyPointsForTriangleException");
+		} else if (vertices.size() < 3) {
+			throw new InvalidPointsAmountException("NotEnoughPointsForTriangleException");
+		}
 
-	}
-
-	public Triangle(ArrayList<Point> vertices) {
 		this.vertices = vertices;
 	}
 
