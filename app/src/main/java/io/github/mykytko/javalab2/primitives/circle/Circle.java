@@ -3,7 +3,7 @@ package io.github.mykytko.javalab2.primitives.circle;
 import io.github.mykytko.javalab2.primitives.Point;
 import io.github.mykytko.javalab2.Color;
 
-public abstract class Circle {
+public abstract class Circle implements Figure {
     private final Point center;
     private final Float radius;
     private final Color color;
