@@ -1,5 +1,16 @@
 package io.github.mykytko.javalab2;
 
 public enum Color {
-  WHITE, BLACK
+    BLACK {
+        @Override
+        public String toString() {
+            return "black";
+        }
+    },
+    WHITE {
+        @Override
+        public String toString() {
+            return "white";
+        }
+    }
 }

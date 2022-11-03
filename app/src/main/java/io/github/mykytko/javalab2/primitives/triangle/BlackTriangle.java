@@ -8,10 +8,6 @@ import java.util.ArrayList;
 public class BlackTriangle extends Triangle {
 	private final Color color = Color.BLACK;
 
-	public BlackTriangle() {
-		super();
-	}
-
 	public BlackTriangle(ArrayList<Point> vertices) {
 		super(vertices);
 	}
@@ -22,6 +18,6 @@ public class BlackTriangle extends Triangle {
 
 	@Override
 	public String toString() {
-		return "Color: " + color + "; " + super.toString();
+		return color + " " + super.toString();
 	}
 }
